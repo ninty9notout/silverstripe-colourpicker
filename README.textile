@@ -2,7 +2,7 @@ h1. SilverStripe Colour Picker Field
 
 Does what it says on the box - provides a pop-up colour picker functionality, turning a text field into a colour picker field.
 
-!//raw.github.com/ninty9notout/silverstripe-colourpicker/master/colourpicker.png!
+!https://raw.github.com/ninty9notout/silverstripe-colourpicker/master/colourpicker.png!
 
 Uses the "jQuery MiniColors":http://labs.abeautifulsite.net/jquery-minicolors/ plugin by "A Beautiful Site":http://www.abeautifulsite.net/ for the colour picker, while using "liveplugins":http://pwwang.com/2012/06/19/jquery-liveplugins-get-your-jquery-plugins-work-on-future-elements/ to successfully bind the MiniColors plugin to the necessary elements.
 
