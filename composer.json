@@ -1,0 +1,20 @@
+{
+	"name": "ninty9notout/silverstripe-colourpicker",
+	"type": "silverstripe-module",
+	"description": "Provides a pop-up colour picker functionality, turning a text field into a colour picker field.",
+	"keywords": ["silverstripe", "module", "cms", "jquery", "color", "colour", "picker", "form", "field"],
+	"homepage": "https://github.com/ninty9notout/silverstripe-colourpicker",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "ninty9notout",
+			"homepage": "https://github.com/ninty9notout",
+			"email": "ninty9notout@hotmail.co.uk"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"silverstripe/cms": ">=3.1"
+	},
+	"target-dir": "silverstripe-colourpicker"
+}
