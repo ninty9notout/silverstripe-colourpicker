@@ -4,7 +4,7 @@ Does what it says on the box - provides a pop-up colour picker functionality, tu
 
 !https://raw.github.com/ninty9notout/silverstripe-colourpicker/master/colourpicker.png!
 
-Uses the "jQuery MiniColors":http://labs.abeautifulsite.net/jquery-minicolors/ plugin by "A Beautiful Site":http://www.abeautifulsite.net/ for the colour picker, while using -"liveplugins":http://pwwang.com/2012/06/19/jquery-liveplugins-get-your-jquery-plugins-work-on-future-elements/- the built in entwine to successfully bind the MiniColors plugin to the necessary elements.
+Uses the "jQuery MiniColors":http://labs.abeautifulsite.net/jquery-minicolors/ plugin by "A Beautiful Site":http://www.abeautifulsite.net/ for the colour picker, while using the built in entwine library to successfully bind the MiniColors plugin to the necessary elements.
 
 h2. Usage
 
