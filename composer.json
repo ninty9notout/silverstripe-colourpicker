@@ -16,5 +16,8 @@
 		"php": ">=5.3.2",
 		"silverstripe/cms": ">=3.1"
 	},
-	"target-dir": "colourpicker"
+	"target-dir": "colourpicker",
+    "extra": {
+        "installer-name": "colourpicker"
+    }
 }
