@@ -1,5 +1,5 @@
 {
-	"name": "ninty9notout/silverstripe-colourpicker",
+	"name": "ninty9notout/colourpicker",
 	"type": "silverstripe-module",
 	"description": "Provides a pop-up colour picker functionality, turning a text field into a colour picker field.",
 	"keywords": ["silverstripe", "module", "cms", "jquery", "color", "colour", "picker", "form", "field"],
