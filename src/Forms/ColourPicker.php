@@ -1,4 +1,10 @@
 <?php
+
+namespace MadeHQ\Forms;
+
+use SilverStripe\Forms\TextField;
+use SilverStripe\View\Requirements;
+
 /**
  * Colour input field.
  * 
