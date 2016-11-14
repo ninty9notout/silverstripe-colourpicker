@@ -1,0 +1,6 @@
+---
+Name: cloudinary
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
