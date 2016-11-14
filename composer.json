@@ -17,7 +17,7 @@
 		"silverstripe/cms": "~4.0.0-alpha3"
 	},
 	"autoload": {
-        "psr-4": {"MadeHQ\\": "src/"}
+        "psr-4": {"MadeHQ\\": "code/"}
     },
     "extra": {
         "installer-name": "colourpicker"
