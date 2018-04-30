@@ -7,6 +7,14 @@ class Colour extends Varchar
         parent::__construct($name, 7, $options);
     }
 
+	/**
+	 * (non-PHPdoc)
+	 * @see DBField::scaffoldFormField()
+	 */
+	public function scaffoldFormField($title = null, $params = null) {
+		return new ColourPicker($this->name, $title);
+	}
+
     public function getHash()
     {
         return substr($this->value, 1);
