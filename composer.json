@@ -13,7 +13,7 @@
 		}
 	],
 	"require": {
-		"silverstripe/admin": "4.1.x-dev"
+		"silverstripe/admin": "1.1.x-dev"
 	},
 	"autoload": {
         "psr-4": {"MadeHQ\\": "code/"}
