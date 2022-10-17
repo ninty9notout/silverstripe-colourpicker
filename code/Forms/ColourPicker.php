@@ -7,7 +7,7 @@ use SilverStripe\View\Requirements;
 
 /**
  * Colour input field.
- * 
+ *
  * @package forms
  * @subpackage fields-formattedinput
  */
