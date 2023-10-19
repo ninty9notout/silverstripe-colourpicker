@@ -1,0 +1,31 @@
+---
+Name: silverstripecolourpickercore
+After:
+ - '#coreconfig'
+---
+
+---
+Name: silverstripecolourpickerfieldtypes
+After:
+ - '#corefieldtypes'
+---
+
+SilverStripe\Core\Injector\Injector:
+  Colour:
+    class: ninty9notout\SSColourPicker\FieldType\DBColour
+  DBColour:
+    class: ninty9notout\SSColourPicker\FieldType\DBColour
+
+---
+Name: silverstripecolourpickerscripts
+After:
+  - '#cmsscripts'
+---
+
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_javascript:
+    - https://cdn.jsdelivr.net/npm/@claviska/jquery-minicolors@2.3.6/jquery.minicolors.min.js
+    - '_resources/client/dist/bundle.js'
+  extra_requirements_css:
+    - https://cdn.jsdelivr.net/npm/@claviska/jquery-minicolors@2.3.6/jquery.minicolors.min.css
+    - '_resources/client/dist/bundle.css'

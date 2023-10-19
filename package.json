@@ -1,0 +1,77 @@
+{
+    "name": "silverstripe-colourpicker",
+    "version": "0.0.1",
+    "description": "Provides a pop-up colour picker functionality",
+    "bin": {
+        "webpack": "./node_modules/webpack/webpack.js"
+    },
+    "engines": {
+        "node": "16.13.0",
+        "npm": "8.19.1"
+    },
+    "config": {
+        "paths": {
+            "js": "client/src/js",
+            "css": "client/src/css",
+            "dist": "client/dist"
+        }
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npm run lint && npm run build-js && npm run build-css",
+        "build-js": "NODE_ENV=production webpack --progress",
+        "build-css": "npm run build-css-sass && npm run build-css-postcss",
+        "build-css-sass": "sass $npm_package_config_paths_css/bundle.scss $npm_package_config_paths_dist/bundle.css",
+        "build-css-postcss": "postcss --use autoprefixer --use postcss-pxtorem --use cssnano --replace $npm_package_config_paths_dist/bundle.css --map",
+        "lint": "npm run lint-js && npm run lint-css",
+        "lint-js": "eslint webpack.config.js $npm_package_config_paths_js",
+        "lint-css": "stylelint $npm_package_config_paths_css/{**/*,*}.scss --custom-syntax postcss-scss",
+        "watch": "concurrently --kill-others 'npm run watch-js' 'npm run watch-css'",
+        "watch-js": "webpack --watch",
+        "watch-css": "watch 'npm run lint-css && npm run build-css' $npm_package_config_paths_css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ninty9notout/silverstripe-colourpicker.git"
+    },
+    "keywords": [
+        "silverstripe",
+        "module",
+        "vendormodule",
+        "cms",
+        "color",
+        "colour",
+        "picker",
+        "form",
+        "field"
+    ],
+    "author": "Hiren Patel <ninty9notout@hotmail.co.uk>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ninty9notout/silverstripe-colourpicker/issues"
+    },
+    "homepage": "https://github.com/ninty9notout/silverstripe-colourpicker#readme",
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.22.9",
+        "@babel/preset-env": "^7.22.9",
+        "@babel/preset-react": "^7.22.5",
+        "autoprefixer": "^10.4.14",
+        "babel-loader": "^9.1.3",
+        "babel-plugin-lodash": "^3.3.4",
+        "concurrently": "^8.2.0",
+        "cssnano": "^6.0.1",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-webpack-plugin": "^4.0.1",
+        "postcss": "^8.4.25",
+        "postcss-cli": "^10.1.0",
+        "postcss-pxtorem": "^6.0.0",
+        "postcss-scss": "^4.0.6",
+        "sass": "^1.63.6",
+        "stylelint": "^15.10.1",
+        "stylelint-config-standard": "^34.0.0",
+        "terser-webpack-plugin": "^5.3.9",
+        "watch": "^1.0.2",
+        "webpack": "^5.88.1",
+        "webpack-cli": "^5.1.4"
+    }
+}
