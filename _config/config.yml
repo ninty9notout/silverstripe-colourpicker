@@ -25,7 +25,7 @@ After:
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_javascript:
     - https://cdn.jsdelivr.net/npm/@claviska/jquery-minicolors@2.3.6/jquery.minicolors.min.js
-    - '_resources/client/dist/bundle.js'
+    - 'ninty9notout/silverstripe-colourpicker:client/dist/bundle.js'
   extra_requirements_css:
     - https://cdn.jsdelivr.net/npm/@claviska/jquery-minicolors@2.3.6/jquery.minicolors.min.css
-    - '_resources/client/dist/bundle.css'
+    - 'ninty9notout/silverstripe-colourpicker:client/dist/bundle.css'
