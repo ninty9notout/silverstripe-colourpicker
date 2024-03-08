@@ -2,6 +2,7 @@
 
 namespace ninty9notout\SSColourPicker\FieldType;
 
+use ninty9notout\SSColourPicker\Forms\ColourPickerField;
 use SilverStripe\ORM\FieldType\DBVarchar;
 use OzdemirBurak\Iris\BaseColor;
 use OzdemirBurak\Iris\Color\Factory;
@@ -245,6 +246,15 @@ class DBColour extends DBVarchar
         return $this;
         // @todo Add once support has been re-added
         // return static::create((string) $this->colour->fadeOut($percent));
+    }
+
+
+    /**
+     * {@inheritdoc}
+     */
+    public function scaffoldFormField($title = null, $params = null)
+    {
+        return ColourPickerField::create($this->name, $title);
     }
 
     /**
